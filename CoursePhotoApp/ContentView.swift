@@ -14,10 +14,10 @@ struct ContentView: View {
                 NavigationBarView()
                 VStack(alignment: .leading) {
                     HStack {
-                        Image(.woman2)
-                            .resizable()
-                            .clipShape(RoundedRectangle(cornerRadius: 4))
-                            .frame(width: 36, height: 36)
+                        RoundedImageView(imageName: "woman2", conerRadius: 4)
+                            .frame(width: 45, height: 36)
+                            .aspectRatio(contentMode: .fit)
+                            
                         VStack(alignment: .leading) {
                             Text("mille_f")
                                 .font(.footnote)
@@ -33,10 +33,8 @@ struct ContentView: View {
                             }
                         }
                     }
-                    Image(.flower)
-                        .resizable()
+                    RoundedImageView(imageName: "flower")
                         .frame(height: 300)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
                         .shadow(color: .gray, radius: 10, x: 2, y: 5)
                     
                     HStack(spacing: 28) {

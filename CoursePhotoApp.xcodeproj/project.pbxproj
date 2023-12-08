@@ -12,6 +12,7 @@
 		C555828D2B1BD9D6009EE506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C555828C2B1BD9D6009EE506 /* Assets.xcassets */; };
 		C55582902B1BD9D6009EE506 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C555828F2B1BD9D6009EE506 /* Preview Assets.xcassets */; };
 		C555829B2B1BE0D2009EE506 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C55582992B1BDF8F009EE506 /* Billabong.ttf */; };
+		C5F391AC2B23A1E400F942AD /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F391AB2B23A1E400F942AD /* RoundedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C555828F2B1BD9D6009EE506 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C55582992B1BDF8F009EE506 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
 		C555829A2B1BE09C009EE506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C5F391AB2B23A1E400F942AD /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +56,13 @@
 		C55582872B1BD9D4009EE506 /* CoursePhotoApp */ = {
 			isa = PBXGroup;
 			children = (
-				C555829A2B1BE09C009EE506 /* Info.plist */,
+				C5F391AA2B23A1A700F942AD /* Views */,
 				C55582962B1BDE74009EE506 /* Fonts */,
+				C555828E2B1BD9D6009EE506 /* Preview Content */,
 				C55582882B1BD9D4009EE506 /* CoursePhotoAppApp.swift */,
 				C555828A2B1BD9D4009EE506 /* ContentView.swift */,
 				C555828C2B1BD9D6009EE506 /* Assets.xcassets */,
-				C555828E2B1BD9D6009EE506 /* Preview Content */,
+				C555829A2B1BE09C009EE506 /* Info.plist */,
 			);
 			path = CoursePhotoApp;
 			sourceTree = "<group>";
@@ -78,6 +81,14 @@
 				C55582992B1BDF8F009EE506 /* Billabong.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C5F391AA2B23A1A700F942AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5F391AB2B23A1E400F942AD /* RoundedImageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 			files = (
 				C555828B2B1BD9D4009EE506 /* ContentView.swift in Sources */,
 				C55582892B1BD9D4009EE506 /* CoursePhotoAppApp.swift in Sources */,
+				C5F391AC2B23A1E400F942AD /* RoundedImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
