@@ -11,6 +11,7 @@
 		C555828B2B1BD9D4009EE506 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C555828A2B1BD9D4009EE506 /* ContentView.swift */; };
 		C555828D2B1BD9D6009EE506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C555828C2B1BD9D6009EE506 /* Assets.xcassets */; };
 		C55582902B1BD9D6009EE506 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C555828F2B1BD9D6009EE506 /* Preview Assets.xcassets */; };
+		C555829B2B1BE0D2009EE506 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C55582992B1BDF8F009EE506 /* Billabong.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		C555828A2B1BD9D4009EE506 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C555828C2B1BD9D6009EE506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C555828F2B1BD9D6009EE506 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C55582992B1BDF8F009EE506 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
+		C555829A2B1BE09C009EE506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,8 @@
 		C55582872B1BD9D4009EE506 /* CoursePhotoApp */ = {
 			isa = PBXGroup;
 			children = (
+				C555829A2B1BE09C009EE506 /* Info.plist */,
+				C55582962B1BDE74009EE506 /* Fonts */,
 				C55582882B1BD9D4009EE506 /* CoursePhotoAppApp.swift */,
 				C555828A2B1BD9D4009EE506 /* ContentView.swift */,
 				C555828C2B1BD9D6009EE506 /* Assets.xcassets */,
@@ -65,6 +70,14 @@
 				C555828F2B1BD9D6009EE506 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C55582962B1BDE74009EE506 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C55582992B1BDF8F009EE506 /* Billabong.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C555829B2B1BE0D2009EE506 /* Billabong.ttf in Resources */,
 				C55582902B1BD9D6009EE506 /* Preview Assets.xcassets in Resources */,
 				C555828D2B1BD9D6009EE506 /* Assets.xcassets in Resources */,
 			);
@@ -275,6 +289,7 @@
 				DEVELOPMENT_TEAM = G66U4NVLWF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoursePhotoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +319,7 @@
 				DEVELOPMENT_TEAM = G66U4NVLWF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoursePhotoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
