@@ -12,56 +12,17 @@ struct ContentView: View {
         ZStack {
             VStack {
                 NavigationBarView()
-                VStack(alignment: .leading) {
-                    HStack {
-                        RoundedImageView(imageName: "woman2", conerRadius: 4)
-                            .frame(width: 45, height: 36)
-                            .aspectRatio(contentMode: .fit)
-                            
-                        VStack(alignment: .leading) {
-                            Text("mille_f")
-                                .font(.footnote)
-                                .fontWeight(.bold)
-                            HStack {
-                                Text("London, England")
-                                    .font(.footnote)
-                                    .foregroundStyle(.secondary)
-                                Spacer()
-                                Text("2 minutes ago")
-                                    .font(.footnote)
-                                    .foregroundStyle(.secondary)
-                            }
+                VStack {
+                    ScrollView {
+                        ForEach(1...5, id: \.self) { index in
+                            CardView()
                         }
                     }
-                    RoundedImageView(imageName: "flower")
-                        .frame(height: 300)
-                        .shadow(color: .gray, radius: 10, x: 2, y: 5)
-                    
-                    HStack(spacing: 28) {
-                        Button(action: {}) {
-                            HStack {
-                                Image(systemName: "heart")
-                                    .font(.headline.weight(.semibold))
-                                Text("22")
-                                    .font(.caption)
-                            }.foregroundStyle(.black)
-                        }
-                        Button(action: {}) {
-                            HStack {
-                                Image(systemName: "bubble.right")
-                                    .font(.headline.weight(.semibold))
-                                Text("4")
-                                    .font(.caption)
-                            }.foregroundStyle(.black)
-                        }
-                    }.padding(.top)
+                    .padding(.bottom)
                 }
-                .padding(.leading)
-                .padding(.trailing)
-                
                 Spacer()
             }
-        }
+        }.edgesIgnoringSafeArea(.bottom)
     }
 }
 
@@ -93,7 +54,60 @@ struct NavigationBarView: View {
                         .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: 10)
                 }
             }
-            .padding()
+            .padding(.leading)
+            .padding(.trailing)
+            .padding(.top)
         }
+    }
+}
+
+struct CardView: View {
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack {
+                RoundedImageView(imageName: "woman2", conerRadius: 4)
+                    .frame(width: 45, height: 36)
+                    .aspectRatio(contentMode: .fit)
+                
+                VStack(alignment: .leading) {
+                    Text("mille_f")
+                        .font(.footnote)
+                        .fontWeight(.bold)
+                    HStack {
+                        Text("London, England")
+                            .font(.footnote)
+                            .foregroundStyle(.secondary)
+                        Spacer()
+                        Text("2 minutes ago")
+                            .font(.footnote)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+            }
+            RoundedImageView(imageName: "flower")
+                .frame(height: 300)
+                .shadow(color: .gray, radius: 10, x: 2, y: 5)
+            
+            HStack(spacing: 28) {
+                Button(action: {}) {
+                    HStack {
+                        Image(systemName: "heart")
+                            .font(.headline.weight(.semibold))
+                        Text("22")
+                            .font(.caption)
+                    }.foregroundStyle(.black)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Image(systemName: "bubble.right")
+                            .font(.headline.weight(.semibold))
+                        Text("4")
+                            .font(.caption)
+                    }.foregroundStyle(.black)
+                }
+            }.padding(.top)
+        }
+        .padding(.leading)
+        .padding(.trailing)
     }
 }
