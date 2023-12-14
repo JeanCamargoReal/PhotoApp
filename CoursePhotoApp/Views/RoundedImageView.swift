@@ -16,6 +16,7 @@ struct RoundedImageView: View {
             .resizable()
             .renderingMode(.original)
             .clipShape(RoundedRectangle(cornerRadius: conerRadius))
+        
             
     }
 }
